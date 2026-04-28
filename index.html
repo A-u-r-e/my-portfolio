@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurélien Pons — Account Director</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Sidebar overlay -->
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div>
+    <div class="sidebar-logo">AURÉLIEN<br>PONS</div>
+    <nav class="sidebar-nav" style="margin-top:2.5rem;">
+      <a href="index.html" class="active"><span class="nav-num">01</span>Home</a>
+      <a href="about.html"><span class="nav-num">02</span>About</a>
+      <a href="projects.html"><span class="nav-num">03</span>Projects</a>
+<!--  <a href="projects-yeti.html"><span class="nav-num">04</span>Featured Case</a> -->
+    </nav>
+  </div>
+  <div class="sidebar-bottom">
+    <div class="sidebar-links">
+      <a class="sidebar-icon-btn" href="https://linkedin.com/in/ponsaurelien" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a class="sidebar-icon-btn" href="mailto:aurelienpons@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+<!--  <a class="sidebar-resume-btn" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Download Resume</a>
+  </div> -->
+</aside>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="menu-trigger" id="menuTrigger" onclick="toggleSidebar()">
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="menu-label">Menu</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="topbar-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+    <a class="topbar-link" href="mailto:aurelienpons@gmail.com">Gmail</a>
+<!--<a class="topbar-link accent-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>Resume ↓</a>-->
+  </div>
+</header>
+
+<!-- ══ PAGE: HOME ══ -->
+<main class="page active" id="page-home">
+  <div class="home-split">
+    <div class="home-left">
+      <div class="home-accent-line"></div>
+      <div>
+        <div class="home-eyebrow">Account Director · Creative Producer</div>
+        <h1 class="home-name">AURÉLIEN PONS</h1>
+        <p class="home-tagline">With experience working in fast-paced creative environments, I lead client relationships and manage cross-functional teams to launch integrated campaigns across global and regional markets.<br><br>I bring a strong production expertise, I understand how the work actually gets made, allowing me to scale projects, optimize processes, and align stakeholders for successful launches.
+<br><br>
+Currently exploring how AI-driven workflows can give teams a real optimization to focus on what matters.</p>
+        <div class="home-cta-row">
+          <a class="btn-primary" href="projects.html" onclick="nav('projects', document.querySelector('.sidebar-nav a:nth-child(3)'))">SEE PROJECTS →</a>
+          <a class="btn-primary" href="about.html" onclick="nav('about', document.querySelector('.sidebar-nav a:nth-child(2)'))">ABOUT ME →</a>
+<!--      <a class="btn-ghost" href="#" onclick="nav('about', document.querySelector('.sidebar-nav a:nth-child(2)'))">ABOUT ME →</a> -->
+        </div>
+      </div>
+<!--  <div class="home-stats">
+        <div>
+          <div class="home-stat-num">11+</div>
+          <div class="home-stat-label">Years exp.</div>
+        </div>
+        <div>
+          <div class="home-stat-num">€1M+</div>
+          <div class="home-stat-label">Budget managed</div>
+        </div>
+        <div>
+          <div class="home-stat-num">5</div>
+          <div class="home-stat-label">Regions, EMEA</div>
+        </div>
+        <div>
+          <div class="home-stat-num">30%</div>
+          <div class="home-stat-label">Fewer revisions</div>
+        </div>
+      </div>
+-->
+    </div>
+    <div class="home-right">
+      <div class="home-photo-bg"></div>
+      <div class="home-big-letter">A</div>
+
+      <!-- Replace the div below with an <img> tag when you have your photo
+        <div class="photo-placeholder">
+        <div class="photo-circle">AP</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.1em;text-transform:uppercase;">Add your photo here</div>
+      </div>  -->
+      <img class="home-photo" src="img/aurelienpons.png" alt="Aurélien Pons">
+      <div class="home-right-tag">Open to freelance · 2026</div>
+      <div class="home-photo-caption">Amsterdam · Montreal · Paris</div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-name">AURÉLIEN PONS ©2026</div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+      <a class="footer-link" href="mailto:aurelienpons@gmail.com">aurelienpons@gmail.com</a>
+<!--  <a class="footer-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Resume</a>-->
+    </div>
+  </footer>
+</main>
+
+
+<script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
+function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(animRing); }
+animRing();
+
+document.querySelectorAll('a, button, .btn-primary, .menu-trigger, .project-row, .detail-back, .btn-ghost').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='18px'; cursor.style.height='18px'; ring.style.width='52px'; ring.style.height='52px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// Sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const trigger = document.getElementById('menuTrigger');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('visible');
+  trigger.classList.toggle('active');
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('visible');
+  document.getElementById('menuTrigger').classList.remove('active');
+}
+
+</script>
+</body>
+</html>

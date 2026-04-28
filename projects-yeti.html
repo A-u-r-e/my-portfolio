@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurélien Pons — [Page Title]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Sidebar overlay -->
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div>
+    <div class="sidebar-logo">AURÉLIEN<br>PONS</div>
+    <nav class="sidebar-nav" style="margin-top:2.5rem;">
+      <a href="index.html"linkedin.com/in/ponsaurelien><span class="nav-num">01</span>Home</a>
+      <a href="about.html"><span class="nav-num">02</span>About</a>
+      <a href="projects.html"><span class="nav-num">03</span>Projects</a>
+      <a href="projects-yeti.html" class="active"><span class="nav-num">04</span>Featured Case</a>
+    </nav>
+  </div>
+  <div class="sidebar-bottom">
+    <div class="sidebar-links">
+      <a class="sidebar-icon-btn" href="https://linkedin.com/in/ponsaurelien" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a class="sidebar-icon-btn" href="mailto:aurelienpons@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+    <a class="sidebar-resume-btn" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Download Resume</a>
+  </div>
+</aside>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="menu-trigger" id="menuTrigger" onclick="toggleSidebar()">
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="menu-label">Menu</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="topbar-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+    <a class="topbar-link" href="mailto:aurelienpons@gmail.com">Gmail</a>
+    <a class="topbar-link accent-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>Resume ↓</a>
+  </div>
+</header>
+
+<!-- ══ PAGE: PROJECT DETAIL ══ -->
+<main class="page" id="page-detail">
+  <div class="detail-hero">
+    <div class="detail-hero-bg-letter">Y</div>
+    <div class="detail-back" onclick="nav('projects', document.querySelector('.sidebar-nav a:nth-child(3)'))">
+      <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      All projects
+    </div>
+    <div class="detail-eyebrow">Account Direction · Integrated Campaign · EMEA</div>
+    <h2 class="detail-title">YETI EMEA<br>CAMPAIGN</h2>
+    <div class="detail-meta">
+      <div class="detail-meta-item">
+        <div class="detail-meta-label">Client</div>
+        <div class="detail-meta-value">YETI</div>
+      </div>
+      <div class="detail-meta-item">
+        <div class="detail-meta-label">Agency</div>
+        <div class="detail-meta-value">Zerotrillion</div>
+      </div>
+      <div class="detail-meta-item">
+        <div class="detail-meta-label">Scope</div>
+        <div class="detail-meta-value">5 Regions · Multi-channel</div>
+      </div>
+      <div class="detail-meta-item">
+        <div class="detail-meta-label">Period</div>
+        <div class="detail-meta-value">Aug 2024 – Present</div>
+      </div>
+      <div class="detail-meta-item">
+        <div class="detail-meta-label">Role</div>
+        <div class="detail-meta-value">Account Director</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-content">
+      <div class="detail-section-label">The Challenge</div>
+      <div class="detail-section-title">Scaling a cult outdoor brand across five distinct European markets</div>
+      <div class="detail-text">
+        <p>YETI — known for its premium coolers and drinkware — had strong brand equity in the US but needed to translate that into culturally resonant campaigns across five EMEA regions simultaneously, each with different retail relationships, seasonal patterns, and audience affinities.</p>
+        <p>The challenge was not just creative — it was operational. Multiple agencies, internal stakeholders, external production partners, and brand guardians all needed to move at the same pace without compromising quality or brand consistency.</p>
+      </div>
+
+      <div class="detail-image-block">
+        <div class="detail-image-placeholder">
+          <div class="img-overlay-num">01</div>
+          <div class="img-label">Campaign visual — add your image here</div>
+        </div>
+        <div class="detail-image-caption">Campaign hero visual · YETI EMEA 2024</div>
+      </div>
+
+      <div class="detail-section-label" style="margin-top:2.5rem;">Approach</div>
+      <div class="detail-section-title">One brief, five markets, zero dilution</div>
+      <div class="detail-text">
+        <p>I restructured the briefing and review process from the ground up — creating a single integrated brief that could inform channel-specific executions without losing strategic clarity. This involved aligning creative, social, production and media partners to a shared delivery rhythm.</p>
+        <p>Weekly communication touchpoints were established with YETI's senior stakeholders across Amsterdam and the US, creating trust and transparency that allowed faster decision-making. Budget ownership of ~€1M/year was managed across production, media, and agency fees with full P&L accountability.</p>
+      </div>
+
+      <div class="detail-image-block">
+        <div class="detail-image-placeholder" style="height:260px;">
+          <div class="img-overlay-num">02</div>
+          <div class="img-label">Behind-the-scenes / process visual — add image here</div>
+        </div>
+        <div class="detail-image-caption">Multi-channel rollout planning · EMEA regions</div>
+      </div>
+
+      <div class="detail-section-label" style="margin-top:2.5rem;">Results</div>
+      <div class="detail-section-title">Fewer revisions. Faster delivery. Stronger relationships.</div>
+      <div class="detail-text">
+        <p>The new briefing and review process reduced creative iteration cycles by 20–30% within the first quarter of implementation. Cross-agency collaboration became more structured, with clearly defined scopes reducing overlap and rework.</p>
+        <p>Beyond the metrics, the most meaningful outcome was a deeper, more trusting relationship with the client — one built on proactive communication, creative protection, and delivery discipline.</p>
+      </div>
+    </div>
+
+    <div class="detail-sidebar">
+      <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;">Key Stats</div>
+
+      <div class="detail-stat-block">
+        <div class="detail-stat-num">€1<span class="accent">M</span></div>
+        <div class="detail-stat-label">Annual budget owned</div>
+        <div class="detail-stat-desc">Full P&L responsibility across production, media and agency fees</div>
+      </div>
+
+      <div class="detail-stat-block">
+        <div class="detail-stat-num">5</div>
+        <div class="detail-stat-label">EMEA regions</div>
+        <div class="detail-stat-desc">Campaigns executed simultaneously across UK, DACH, France, Nordics, Benelux</div>
+      </div>
+
+      <div class="detail-stat-block">
+        <div class="detail-stat-num">30<span class="accent">%</span></div>
+        <div class="detail-stat-label">Fewer revision cycles</div>
+        <div class="detail-stat-desc">Achieved through structured briefing and review process redesign</div>
+      </div>
+
+      <div class="detail-stat-block">
+        <div class="detail-stat-num">4<span class="accent">+</span></div>
+        <div class="detail-stat-label">Agency partners managed</div>
+        <div class="detail-stat-desc">Strategy, creative, social, and production partners aligned to shared delivery</div>
+      </div>
+
+      <div class="detail-tags-section">
+        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;">Disciplines</div>
+        <div class="detail-tags">
+          <span class="detail-tag accent-tag">Account Direction</span>
+          <span class="detail-tag">Brand Strategy</span>
+          <span class="detail-tag">Campaign Production</span>
+          <span class="detail-tag">Budget Management</span>
+          <span class="detail-tag">Cross-Agency Leadership</span>
+          <span class="detail-tag">KPI Reporting</span>
+          <span class="detail-tag">Stakeholder Mgmt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-name">AURÉLIEN PONS</div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+      <a class="footer-link" href="mailto:aurelienpons@gmail.com">aurelienpons@gmail.com</a>
+      <a class="footer-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Resume</a>
+    </div>
+  </footer>
+</main>
+
+<script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
+function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(animRing); }
+animRing();
+
+document.querySelectorAll('a, button, .btn-primary, .menu-trigger, .project-row, .detail-back, .btn-ghost').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='18px'; cursor.style.height='18px'; ring.style.width='52px'; ring.style.height='52px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// Sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const trigger = document.getElementById('menuTrigger');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('visible');
+  trigger.classList.toggle('active');
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('visible');
+  document.getElementById('menuTrigger').classList.remove('active');
+}
+
+</script>
+</body>
+</html>

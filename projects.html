@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurélien Pons — Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Sidebar overlay -->
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div>
+    <div class="sidebar-logo">AURÉLIEN<br>PONS</div>
+    <nav class="sidebar-nav" style="margin-top:2.5rem;">
+      <a href="index.html"><span class="nav-num">01</span>Home</a>
+      <a href="about.html"><span class="nav-num">02</span>About</a>
+      <a href="projects.html" class="active"><span class="nav-num">03</span>Projects</a>
+<!--  <a href="projects-yeti.html"><span class="nav-num">04</span>Featured Case</a> -->
+    </nav>
+  </div>
+  <div class="sidebar-bottom">
+    <div class="sidebar-links">
+      <a class="sidebar-icon-btn" href="https://linkedin.com/in/ponsaurelien" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a class="sidebar-icon-btn" href="mailto:aurelienpons@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+<!--  <a class="sidebar-resume-btn" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Download Resume</a>
+  </div> -->
+</aside>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="menu-trigger" id="menuTrigger" onclick="toggleSidebar()">
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="menu-label">Menu</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="topbar-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+    <a class="topbar-link" href="mailto:aurelienpons@gmail.com">Gmail</a>
+<!--<a class="topbar-link accent-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>Resume ↓</a>-->
+  </div>
+</header>
+
+<!-- ══ PAGE: PROJECTS ══ -->
+<body>
+<main class="page" id="page-projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-eyebrow">Selected work</div>
+      <h2 class="projects-title">PROJECTS</h2>
+    </div>
+    <div class="projects-count">4 case studies</div>
+  </div>
+
+  <div class="projects-list">
+    <div class="project-row" onclick="nav('detail', document.querySelector('.sidebar-nav a:nth-child(4)'))">
+      <div class="proj-num">01</div>
+      <div class="proj-info">
+        <div class="proj-name">YETI EMEA Campaign</div>
+        <div class="proj-client">Zerotrillion · YETI</div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Brand Strategy</span>
+        <span class="proj-tag">Integrated Campaign</span>
+        <span class="proj-tag">EMEA</span>
+      </div>
+      <div class="proj-year">2024–2025</div>
+      <div class="proj-arrow">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="proj-num">02</div>
+      <div class="proj-info">
+        <div class="proj-name">IGA Digital Advent</div>
+        <div class="proj-client">Bite Size · IGA</div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Digital Product</span>
+        <span class="proj-tag">Campaign</span>
+        <span class="proj-tag">CRM</span>
+      </div>
+      <div class="proj-year">2023</div>
+      <div class="proj-arrow">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="proj-num">03</div>
+      <div class="proj-info">
+        <div class="proj-name">Hyundai × United Nations</div>
+        <div class="proj-client">Sid Lee · Hyundai</div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Brand Platform</span>
+        <span class="proj-tag">Documentary</span>
+        <span class="proj-tag">Global</span>
+      </div>
+      <div class="proj-year">2022</div>
+      <div class="proj-arrow">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="proj-num">04</div>
+      <div class="proj-info">
+        <div class="proj-name">TH × Lewis Hamilton</div>
+        <div class="proj-client">Tommy Hilfiger (PVH)</div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Celebrity Campaign</span>
+        <span class="proj-tag">Global Launch</span>
+        <span class="proj-tag">Retail</span>
+      </div>
+      <div class="proj-year">2018–2019</div>
+      <div class="proj-arrow">
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" style="margin-top:4rem;">
+    <div class="footer-name">AURÉLIEN PONS ©2026</div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+      <a class="footer-link" href="mailto:aurelienpons@gmail.com">aurelienpons@gmail.com</a>
+<!--  <a class="footer-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Resume</a>-->
+    </div>
+  </footer>
+</main>
+
+<script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
+function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(animRing); }
+animRing();
+
+document.querySelectorAll('a, button, .btn-primary, .menu-trigger, .project-row, .detail-back, .btn-ghost').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='18px'; cursor.style.height='18px'; ring.style.width='52px'; ring.style.height='52px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// Sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const trigger = document.getElementById('menuTrigger');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('visible');
+  trigger.classList.toggle('active');
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('visible');
+  document.getElementById('menuTrigger').classList.remove('active');
+}
+
+</script>
+</body>
+</html>

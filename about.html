@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurélien Pons — About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Sidebar overlay -->
+<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div>
+    <div class="sidebar-logo">AURÉLIEN<br>PONS</div>
+    <nav class="sidebar-nav" style="margin-top:2.5rem;">
+      <a href="index.html"><span class="nav-num">01</span>Home</a>
+      <a href="about.html" class="active"><span class="nav-num">02</span>About</a>
+      <a href="projects.html"><span class="nav-num">03</span>Projects</a>
+<!--  <a href="projects-yeti.html"><span class="nav-num">04</span>Featured Case</a> -->
+    </nav>
+  </div>
+  <div class="sidebar-bottom">
+    <div class="sidebar-links">
+      <a class="sidebar-icon-btn" href="https://linkedin.com/in/ponsaurelien" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a class="sidebar-icon-btn" href="mailto:aurelienpons@gmail.com" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+<!--  <a class="sidebar-resume-btn" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Download Resume</a>
+  </div> -->
+</aside>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="menu-trigger" id="menuTrigger" onclick="toggleSidebar()">
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <span class="menu-label">Menu</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="topbar-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+    <a class="topbar-link" href="mailto:aurelienpons@gmail.com">Gmail</a>
+<!--<a class="topbar-link accent-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>Resume ↓</a>-->
+  </div>
+</header>
+
+<!-- ══ PAGE: ABOUT ══ -->
+<main class="page" id="page-about">
+  <div class="about-wrap">
+    <div class="about-sticky">
+      <div class="section-eyebrow">About</div>
+      <h2 class="about-title">WHO I AM</h2>
+      <div class="about-role-tag">Account Director · Creative Producer</div>
+
+      <div class="about-competency-list" style="margin-top:2.5rem;">
+        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;">Core Skills</div>
+        <div class="about-comp-item">Client & Account Leadership</div>
+        <div class="about-comp-item">Brand Marketing & Strategy</div>
+        <div class="about-comp-item">Creative Operations</div>
+        <div class="about-comp-item">Omnichannel Campaigns</div>
+        <div class="about-comp-item">Budget & P&L Ownership</div>
+        <div class="about-comp-item">Cross-Agency Collaboration</div>
+        <div class="about-comp-item">AI Workflow Optimization</div>
+      </div>
+
+      <div style="margin-top:2rem;padding-top:2rem;border-top:0.5px solid var(--border);">
+        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;">Languages</div>
+        <div style="font-size:13px;color:var(--ink);margin-top:0.4rem;">English <span style="color:var(--muted);">(Full Professional)</span></div>
+        <div style="font-size:13px;color:var(--ink);">French <span style="color:var(--muted);">(Native)</span></div>
+      </div>
+
+      <div style="margin-top:2rem;padding-top:2rem;border-top:0.5px solid var(--border);">
+        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem;">Education</div>
+        <div style="font-size:13px;font-weight:500;color:var(--ink);">MSc Digital Communications Management</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:0.25rem;">IIM, Paris · 2008–2013</div>
+      </div>
+    </div>
+
+    <div class="about-body">
+      <div class="about-bio">
+        <p>I'm an Account Director with <strong>11+ years</strong> leading integrated campaigns across global creative agencies and in-house studios.<br>I build trusted relationships and deliver campaigns across brand, digital, and production, from concept through to multi-channel rollout.</p>
+        <p>I sit at the intersection of <strong>brand strategy and production reality</strong>.<br>I understand how ambitious ideas get built, what they actually cost, and how to bring the right partners together to deliver them at scale. My clients trust me because I make complex things simple and I protect the creative work without losing the relationship.</p>
+        <p>Outside of work, I'm a <strong>huge sports fan</strong> (football, Formula 1...).<br>Sports unite communities with a shared passion and create cultural moments. I'm particularly interested in the current strategic shift making fandom the core of initiatives, creating deeper emotional connections.</p>
+      </div>
+
+      <div class="about-section-title">EXPERIENCE</div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Account Director · <span class="exp-company">Zerotrillion</span></div>
+          </div>
+          <div class="exp-period">Aug 2024 – Present</div>
+        </div>
+        <div class="exp-location">Amsterdam, The Netherlands</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Lead EMEA integrated marketing campaigns for YETI across 5 regions, from concept development, content localization, production, and multi-channel rollout.</div>
+          <div class="exp-highlight">Structured briefing and review processes that reduced creative iteration cycles by 20–30%.</div>
+          <div class="exp-highlight">Own yearly budget of approx. €1M/year, managing allocation and agency P&L.</div>
+          <div class="exp-highlight">Main point of contact for clients, managing strong relationships and creating weekly communication channels, to grow accounts and manage escalation.</div>
+          <div class="exp-highlight">Managed cross-agency collaboration across strategy, creative, social, and production partners within defined scopes of work.</div>
+          <div class="exp-highlight">Contributed to pitch decks and presentations, gaining new clients for the agency.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Account Director (Digital) · <span class="exp-company">Bite Size</span></div>
+          </div>
+          <div class="exp-period">May 2023 – Jun 2024</div>
+        </div>
+        <div class="exp-location">Montreal, Canada</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Directed integrated digital marketing programs for clients including IGA and Molson Coors.</div>
+          <div class="exp-highlight">Led cross-functional teams to execute large-scale promotional initiatives, including IGA’s first digital advent calendar (30,000+ users in Quebec).</div>
+          <div class="exp-highlight">Contributed to pitch presentation, growing project scope within IGA partnership team.</div>
+          <div class="exp-highlight">Built trusted relationships with senior client stakeholders through clear communication and proactive problem-solving.</div>
+          <div class="exp-highlight">Oversaw end-to-end execution from strategic positioning through delivery, optimization, and reporting.</div>
+          <div class="exp-highlight">Introduced workflow and resource planning systems, improving on-time delivery by 25% across concurrent initiatives.</div>
+          <div class="exp-highlight">Principal go-to-person for internal and external partners and clients, for all digital queries and expertise.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Account Supervisor · <span class="exp-company">Sid Lee</span></div>
+          </div>
+          <div class="exp-period">Oct 2021 – Feb 2023</div>
+        </div>
+        <div class="exp-location">Montreal, Canada</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Led global integrated communications for Hyundai x United Nations, spanning brand platform, content, and documentary production.</div>
+          <div class="exp-highlight">Brought strategic insight, alignment and recommendations to Hyundai and the UN in their partnership.</div>
+          <div class="exp-highlight">Managed branding initiatives for Solotech and LCI Education, defining strategic positioning and new brand identities.</div>
+          <div class="exp-highlight">Managed global redesign of Unity.com, coordinating UX, design, development, and content production across time zones.</div>
+          <div class="exp-highlight">Responsible for financial performance across multiple mandates, ensuring delivery within scope and agency margin targets.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Account Supervisor · <span class="exp-company">TAXI (WPP)</span></div>
+          </div>
+          <div class="exp-period">Mar 2020 – Sep 2021</div>
+        </div>
+        <div class="exp-location">Montreal, Canada</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Led national integrated campaigns for Fido Wireless & Home Internet across digital, video, and social channels.</div>
+          <div class="exp-highlight">Delivered ATL and digital campaign assets, coordinating production shoots and post-production workflows.</div>
+          <div class="exp-highlight">Introduced new DCO workflow, cutting programmatic time-to-market by 50% while increasing asset output.</div>
+          <div class="exp-highlight">Balanced delivery speed, quality, and feasibility across high-volume digital outputs.</div>
+          <div class="exp-highlight">Supported agile ways of working while knowing when to apply more structured delivery models.</div>
+          <div class="exp-highlight">Supported onboarding and day-to-day guidance of junior account team members</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Creative Services Manager · <span class="exp-company">Tommy Hilfiger (PVH)</span></div>
+          </div>
+          <div class="exp-period">Jan 2016 – Jan 2020</div>
+        </div>
+        <div class="exp-location">Amsterdam, The Netherlands</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Managed global brand launches and seasonal activations across markets.</div>
+          <div class="exp-highlight">Supported seasonal storytelling, retail initiatives, and celebrity partnership campaigns (including TH x Lewis Hamilton).</div>
+          <div class="exp-highlight">Oversaw timelines, budgets, and quality control for large-scale global launches.</div>
+          <div class="exp-highlight">Streamlined eCom production and asset workflows, reducing delivery timelines by approximately 33%.</div>
+          <div class="exp-highlight">Managed delivery of digital and e-commerce assets aligned to global calendars and consumer moments.</div>
+          <div class="exp-highlight">Ensured brand consistency across digital, retail, wholesale, and social channels.</div>
+          <div class="exp-highlight">Built strong internal relationships across marketing, production, and creative teams.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-role">Digital Project Manager · <span class="exp-company">Monks</span></div>
+          </div>
+          <div class="exp-period">Mar 2013 – Feb 2015</div>
+        </div>
+        <div class="exp-location">Amsterdam, The Netherlands</div>
+        <div class="exp-highlights">
+          <div class="exp-highlight">Managed full life cycle digital production across design, animation, video, and development.</div>
+          <div class="exp-highlight">Delivered high-volume, high-pressure digital projects for global clients.</div>
+          <div class="exp-highlight">Built a strong foundation in digital ecosystems, delivery discipline, and execution quality.</div>
+          <div class="exp-highlight">Managed production schedules, budgets, and quality control.</div>
+          <div class="exp-highlight">Translated creative intent into executable technical plans under fast turnaround constraints.</div>
+          <div class="exp-highlight">Developed fluency in how digital platforms, media, and content come together in practice.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-name">AURÉLIEN PONS ©2026</div>
+    <div class="footer-links">
+      <a class="footer-link" href="https://linkedin.com/in/ponsaurelien" target="_blank">LinkedIn</a>
+      <a class="footer-link" href="mailto:aurelienpons@gmail.com">aurelienpons@gmail.com</a>
+<!--  <a class="footer-link" target="_blank" href="dwnld/Aurelien Pons - Client Director.pdf" download>↓ Resume</a>-->
+    </div>
+  </footer>
+</main>
+
+<script>
+// Cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
+function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(animRing); }
+animRing();
+
+document.querySelectorAll('a, button, .btn-primary, .menu-trigger, .project-row, .detail-back, .btn-ghost').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.style.width='18px'; cursor.style.height='18px'; ring.style.width='52px'; ring.style.height='52px'; });
+  el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// Sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const trigger = document.getElementById('menuTrigger');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('visible');
+  trigger.classList.toggle('active');
+}
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('visible');
+  document.getElementById('menuTrigger').classList.remove('active');
+}
+
+</script>
+</body>
+</html>
