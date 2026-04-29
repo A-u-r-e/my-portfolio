@@ -649,6 +649,12 @@ body:hover .cursor { opacity: 1; }
   padding: 0 4rem;
 }
 
+a.project-row {
+  display: grid;
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-row {
   display: grid;
   grid-template-columns: 60px 1fr 160px 160px 80px;
@@ -751,10 +757,14 @@ body:hover .cursor { opacity: 1; }
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
   gap: 0.5rem;
   margin-bottom: 3rem;
   transition: color 0.2s;
+
 }
+
+
 .detail-back:hover { color: var(--accent); }
 .detail-back svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; }
 
@@ -961,3 +971,16 @@ body:hover .cursor { opacity: 1; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+
+.body-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.body-link:hover {
+  color: var(--accent);
+}
