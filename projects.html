@@ -21,7 +21,6 @@
 </script>
 
 <body>
-
 <!-- Custom cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
@@ -70,7 +69,7 @@
 </header>
 
 <!-- ══ PAGE: PROJECTS ══ -->
-<body>
+
 <main class="page" id="page-projects">
   <div class="projects-header">
     <div>
@@ -81,7 +80,7 @@
   </div>
 
   <div class="projects-list">
-    <a class="project-row" href="projects/yeti.html">
+    <a class="project-row" href="projects/yeti.html" data-img="img/thumb-yeti.jpeg">
       <div class="proj-num">01</div>
       <div class="proj-info">
         <div class="proj-name">YETI EMEA Campaign</div>
@@ -98,24 +97,24 @@
       </div>
     </a>
 
-    <a class="project-row" href="projects/th-campaign.html">
+    <a class="project-row" href="th-campaign.html" data-img="img/thumb-tommyjeans.jpg">
       <div class="proj-num">02</div>
       <div class="proj-info">
         <div class="proj-name">Tommy Jeans SS20 Collection</div>
         <div class="proj-client">Tommy Hilfiger (PVH)</div>
-   </div>
-   <div class="proj-tags">
-     <span class="proj-tag">Campaign Production</span>
-     <span class="proj-tag">On-location shoot</span>
-     <span class="proj-tag">Social Media Strategy</span>
-   </div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Campaign Production</span>
+        <span class="proj-tag">On-location shoot</span>
+        <span class="proj-tag">Social Media Strategy</span>
+      </div>
    <div class="proj-year">2019</div>
    <div class="proj-arrow">
      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-   </div>
-   </a>
+    </div>
+    </a>
 
-   <a class="project-row" href="projects/iga.html">
+   <a class="project-row" href="projects/iga.html" data-img="img/thumb-iga.jpg">
       <div class="proj-num">03</div>
       <div class="proj-info">
         <div class="proj-name">IGA Digital Advent</div>
@@ -132,7 +131,7 @@
       </div>
     </a>
 
-    <a class="project-row" href="projects/hyundai.html">
+    <a class="project-row" href="projects/hyundai.html" data-img="img/thumb-fortomorrow.jpg">
       <div class="proj-num">04</div>
       <div class="proj-info">
         <div class="proj-name">Hyundai × United Nations</div>
@@ -149,7 +148,7 @@
       </div>
     </a>
 
-    <a class="project-row" href="projects/th-lewis.html">
+    <a class="project-row" href="projects/th-lewis.html" data-img="img/thumb-lewis2.jpg">
       <div class="proj-num">05</div>
       <div class="proj-info">
         <div class="proj-name">TH × Lewis Hamilton</div>
@@ -178,18 +177,57 @@
   </footer>
 </main>
 
+<img id="hoverImg" class="proj-hover-img" src="" alt="">
+
 <script>
 // Cursor
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
+const hoverImg = document.getElementById('hoverImg');
 let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
-function animRing() { rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12; ring.style.left = rx+'px'; ring.style.top = ry+'px'; requestAnimationFrame(animRing); }
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX;
+  my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top = my + 'px';
+  positionHoverImg();
+});
+
+document.addEventListener('scroll', positionHoverImg);
+
+function positionHoverImg() {
+  requestAnimationFrame(() => {
+    hoverImg.style.left = (mx + 24) + 'px';
+    hoverImg.style.top  = (my - hoverImg.offsetHeight / 2) + 'px';
+  });
+}
+
+function animRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animRing);
+}
 animRing();
 
 document.querySelectorAll('a, button, .btn-primary, .menu-trigger, .project-row, .detail-back, .btn-ghost').forEach(el => {
   el.addEventListener('mouseenter', () => { cursor.style.width='18px'; cursor.style.height='18px'; ring.style.width='52px'; ring.style.height='52px'; });
   el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+// Project hover images
+document.querySelectorAll('.project-row').forEach(row => {
+  const imgSrc = row.dataset.img;
+
+  row.addEventListener('mouseenter', () => {
+    hoverImg.src = imgSrc;
+    hoverImg.classList.add('visible');
+  });
+  row.addEventListener('mouseleave', () => {
+    hoverImg.classList.remove('visible');
+  });
 });
 
 // Sidebar
@@ -201,12 +239,12 @@ function toggleSidebar() {
   overlay.classList.toggle('visible');
   trigger.classList.toggle('active');
 }
+
 function closeSidebar() {
   document.getElementById('sidebar').classList.remove('open');
   document.getElementById('overlay').classList.remove('visible');
   document.getElementById('menuTrigger').classList.remove('active');
 }
-
 </script>
 </body>
 </html>
