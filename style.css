@@ -993,6 +993,13 @@ a.project-row {
     --nav-h: 56px;
   }
 
+  /* ── CURSOR ── */
+  .cursor, .cursor-ring { display: none; }
+  body { cursor: auto; }
+
+  /* ── HOVER IMAGE ── */
+  #hoverImg { display: none; }
+
   /* ── TOPBAR ── */
   .topbar-center { display: none; }
 
